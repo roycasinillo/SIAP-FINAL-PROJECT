@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Roy Casinillo </a>
+    </div>
+
+    <div class="right">
+      <a href="mailto:Markjohn@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi i'm Roy Casinillo  👋</h2>
+        <p>Welcome to my digital space! I'm Mark John, a passionate web developer, graphic designer, content creator dedicated to crafting user-friendly websites, creating compelling visual stories, delivering insightful content.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Projects</span>
+          </a>
+          
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>About</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="hero-headshot.webp" alt="john doe headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Projects -->
+    <section id="skills" class="projects-section">
+      <h2>PROJECTS</h2>
+      <div class="text">
+        This is our projects.
+      </div>
+
+      <div class="projects-container">
+        <!-- Project Card 1: SPOT THE FAKE -->
+        <div class="project-card" data-project-id="1">
+          <div class="project-header spot-the-fake">
+            <div class="header-content">
+              <span class="header-text"><span class="highlight">SPOT</span> THE</span>
+              <span class="emoji">🤐</span>
+            </div>
+            <div class="header-title">FAKE</div>
+          </div>
+          <div class="project-content">
+            <div class="project-image-container">
+              <img class="project-image" src="html-logo.webp" alt="Project 1" data-project-id="1">
+              <input type="file" class="image-upload" accept="image/*" data-project-id="1" style="display: none;">
+            </div>
+            <ul class="project-features">
+              <li>- A CITIZENS GUIDE TO</li>
+              <li>- AI MISINFORMATION</li>
+            </ul>
+            <div class="project-title">SPOT THE FAKE</div>
+          </div>
+          <div class="project-footer">
+            <a href="https://siap-1.netlify.app/" class="more-btn" target="_blank">more</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2: RYKZ MOTOR CARE -->
+        <div class="project-card" data-project-id="2">
+          <div class="project-header rykz-motor">
+            <div class="rykz-sidebar">
+              <div class="rykz-logo">
+                <div class="logo-circle">
+                  <div class="logo-icon">🏍️</div>
+                </div>
+                <div class="logo-text">RYKZ MOTOCARE</div>
+              </div>
+              <button class="dashboard-btn">Dashboard</button>
+              <ul class="menu-items">
+                <li>Customer</li>
+                <li>Products</li>
+                <li>Orders</li>
+                <li>Reports</li>
+              </ul>
+            </div>
+            <div class="rykz-content">
+              <h3>Dashboard</h3>
+              <div class="sales-info">
+                <div class="total-sales">
+                  <div class="sales-amount">P8,599</div>
+                  <div class="sales-change">+8%</div>
+                </div>
+                <div class="sales-overview">
+                  <div class="donut-chart">
+                    <div class="donut-center">69%</div>
+                  </div>
+                  <div class="chart-label">Sales Overview</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-image-container">
+              <img class="project-image" src="css-logo.webp" alt="Project 2" data-project-id="2">
+              <input type="file" class="image-upload" accept="image/*" data-project-id="2" style="display: none;">
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-title-footer">RYKZ MOTOR CARE</div>
+            <a href="https://jamesinoc.github.io/FINAL-WEBPAGE/" class="more-btn" target="_blank">more</a>
+          </div>
+        </div>
+
+        <!-- Project Card 3: ADD MORE -->
+        <div class="project-card add-more-card" data-project-id="3">
+          <div class="project-content add-more-content">
+            <button class="add-more-btn">ADD MORE</button>
+            <div class="add-more-form" style="display: none;">
+              <input type="text" class="new-project-title" placeholder="Project Title">
+              <input type="text" class="new-project-link" placeholder="Project URL">
+              <div class="form-buttons">
+                <button class="save-project-btn">Save</button>
+                <button class="cancel-project-btn">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: About -->
+    <section id="testimony" class="testimony-section">
+      <h2>ABOUT ME</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="testimony-headshot.webp">
+          <p>Roy Casinillo </p>
+          <p>Web Developer</p>
+        </div>
+
+        <div class="text">
+          Hello! I'm Mark John, a dedicated web developer, graphic designer, content creator. I help clients/businesses achieve their goals through purposeful, well-crafted websites, designs, content.
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+             Get in touch with me
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Auto-save functionality using localStorage
+    const STORAGE_KEY = 'portfolio_projects';
+
+    // Load saved images on page load
+    function loadSavedImages() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        const data = JSON.parse(saved);
+        document.querySelectorAll('.project-image').forEach(img => {
+          const projectId = img.dataset.projectId;
+          if (data[projectId] && data[projectId].image) {
+            img.src = data[projectId].image;
+          }
+        });
+      }
+    }
+
+    // Save image to localStorage
+    function saveImage(projectId, imageData) {
+      let data = {};
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        data = JSON.parse(saved);
+      }
+      
+      if (!data[projectId]) {
+        data[projectId] = {};
+      }
+      
+      data[projectId].image = imageData;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    // Make images clickable to change
+    document.querySelectorAll('.project-image').forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', function() {
+        const projectId = this.dataset.projectId;
+        const fileInput = document.querySelector(`.image-upload[data-project-id="${projectId}"]`);
+        fileInput.click();
+      });
+    });
+
+    // Handle image upload
+    document.querySelectorAll('.image-upload').forEach(input => {
+      input.addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+          const projectId = this.dataset.projectId;
+          const reader = new FileReader();
+          
+          reader.onload = function(event) {
+            const img = document.querySelector(`.project-image[data-project-id="${projectId}"]`);
+            img.src = event.target.result;
+            
+            // Auto-save image
+            saveImage(projectId, event.target.result);
+          };
+          
+          reader.readAsDataURL(file);
+        }
+      });
+    });
+
+    // Add More functionality
+    const addMoreBtn = document.querySelector('.add-more-btn');
+    const addMoreForm = document.querySelector('.add-more-form');
+    const saveProjectBtn = document.querySelector('.save-project-btn');
+    const cancelProjectBtn = document.querySelector('.cancel-project-btn');
+
+    if (addMoreBtn) {
+      addMoreBtn.addEventListener('click', function() {
+        this.style.display = 'none';
+        addMoreForm.style.display = 'flex';
+      });
+    }
+
+    if (cancelProjectBtn) {
+      cancelProjectBtn.addEventListener('click', function() {
+        addMoreForm.style.display = 'none';
+        addMoreBtn.style.display = 'block';
+        // Clear form
+        document.querySelector('.new-project-title').value = '';
+        document.querySelector('.new-project-link').value = '';
+      });
+    }
+
+    if (saveProjectBtn) {
+      saveProjectBtn.addEventListener('click', function() {
+        const title = document.querySelector('.new-project-title').value.trim();
+        const link = document.querySelector('.new-project-link').value.trim();
+        
+        if (title && link) {
+          // Create new project card
+          const newProjectId = Date.now().toString();
+          const projectsContainer = document.querySelector('.projects-container');
+          
+          // Create new card HTML
+          const newCard = document.createElement('div');
+          newCard.className = 'project-card';
+          newCard.dataset.projectId = newProjectId;
+          
+          newCard.innerHTML = `
+            <div class="project-header spot-the-fake">
+              <div class="header-content">
+                <span class="header-text">${title.toUpperCase()}</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-image-container">
+                <img class="project-image" src="images/html-logo.webp" alt="${title}" data-project-id="${newProjectId}">
+                <input type="file" class="image-upload" accept="image/*" data-project-id="${newProjectId}" style="display: none;">
+              </div>
+              <div class="project-title">${title}</div>
+            </div>
+            <div class="project-footer">
+              <a href="${link}" class="more-btn" target="_blank">more</a>
+            </div>
+          `;
+          
+          // Insert before add-more card
+          const addMoreCard = document.querySelector('.add-more-card');
+          projectsContainer.insertBefore(newCard, addMoreCard);
+          
+          // Attach event listeners to new card
+          const newImg = newCard.querySelector('.project-image');
+          newImg.style.cursor = 'pointer';
+          newImg.addEventListener('click', function() {
+            const fileInput = newCard.querySelector('.image-upload');
+            fileInput.click();
+          });
+          
+          const newFileInput = newCard.querySelector('.image-upload');
+          newFileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+              const reader = new FileReader();
+              reader.onload = function(event) {
+                newImg.src = event.target.result;
+                saveImage(newProjectId, event.target.result);
+              };
+              reader.readAsDataURL(file);
+            }
+          });
+          
+          // Reset form
+          addMoreForm.style.display = 'none';
+          addMoreBtn.style.display = 'block';
+          document.querySelector('.new-project-title').value = '';
+          document.querySelector('.new-project-link').value = '';
+        } else {
+          alert('Please fill in both title and link');
+        }
+      });
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      loadSavedImages();
+    });
+  </script>
+</body>
+</html>
